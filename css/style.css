@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.main_container{
+    height: fit-content;
+    background-color: #414141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container{
+    position: relative;
+    max-width: 1360px;
+    width: 100%;
+
+    background-color: #212121;
+    border-radius: 10px;
+
+    margin: 5px auto;
+
+
+}
+
+.button_section{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+}
+
+
+.button_section button{
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    outline: none;
+    transition: 0.2s;
+}
+.button_section button:hover{
+    background-color: rgb(1, 132, 255);
+}
+
+.button_section .active{
+    background: linear-gradient(to right, rgba(1, 132, 255, 0.534), rgb(217, 146, 250));
+}
+
+
+.filterable_cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1px;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.card{
+    flex-basis: 300px;
+    flex-grow: 1;
+    background-color: #414141;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.card.hide{
+    display: none;
+}
+.card:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.45),
+    inset 10px 10px 15px rgba(0, 0, 0, 0.75);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+    border-radius: 10px 10px 5px 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.paragraph{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+
